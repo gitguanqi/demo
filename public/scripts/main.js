@@ -2,7 +2,7 @@
  * @Author: fed_guanqi 
  * @Date: 2019-10-18 19:49:27 
  * @Last Modified by: fed_guanqi
- * @Last Modified time: 2019-10-18 21:05:03
+ * @Last Modified time: 2019-10-18 21:15:01
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
@@ -24,9 +24,9 @@ function showData (list) {
         let cIndex = element.cid.toString().split('')[0] - 1;
         let tags = element.tags.split(',').join(', ');
         if (element.href.indexOf('http') > -1 || element.href.indexOf('https') > -1) {
-            element.href = host + '/link/?url=' + element.href;
+            element.href = host + '/demo/link/?url=' + element.href;
         } else {
-            element.href = host + '/' + element.href;
+            element.href = host + '/demo/' + element.href;
         }
         contentItem[cIndex].innerHTML += `<li>
             <a href="${element.href}" target="_blank" title="${element.description}">
