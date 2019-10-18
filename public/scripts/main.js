@@ -2,7 +2,7 @@
  * @Author: fed_guanqi 
  * @Date: 2019-10-18 19:49:27 
  * @Last Modified by: fed_guanqi
- * @Last Modified time: 2019-10-18 21:15:01
+ * @Last Modified time: 2019-10-18 21:17:03
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
@@ -30,7 +30,7 @@ function showData (list) {
         }
         contentItem[cIndex].innerHTML += `<li>
             <a href="${element.href}" target="_blank" title="${element.description}">
-                <img src="${host}/./public/images/holder.png" data-src="${host + '/' + element.picUrl}" alt="${element.name}">
+                <img src="${host}/demo/public/images/holder.png" data-src="${host + '/demo/' + element.picUrl}" alt="${element.name}">
                 <span class="project-title">${element.name}</span>
                 <span class="project-des">${element.description}</span>
                 <span class="project-tags"><i class="fa fa-tags"></i> ${tags}</span>
