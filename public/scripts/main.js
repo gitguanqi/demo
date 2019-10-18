@@ -2,7 +2,7 @@
  * @Author: fed_guanqi 
  * @Date: 2019-10-18 19:49:27 
  * @Last Modified by: fed_guanqi
- * @Last Modified time: 2019-10-18 21:17:03
+ * @Last Modified time: 2019-10-18 21:21:43
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
@@ -10,7 +10,7 @@ let contentItem = document.querySelectorAll('.demo-content-item-ls');
 
 getData();
 async function getData () {
-    let data = await axios.get('./public/mock/list.json');
+    let data = await axios.get('/demo/public/mock/list.json');
     document.title = data.data.name + '- 探索前端新技术';
     siteTitle.innerText = data.data.name;
     let list = data.data.data.v1.data.list;
