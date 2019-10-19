@@ -2,7 +2,7 @@
  * @Author: fed_guanqi 
  * @Date: 2019-10-18 19:49:27 
  * @Last Modified by: fed_guanqi
- * @Last Modified time: 2019-10-19 13:10:18
+ * @Last Modified time: 2019-10-19 13:14:25
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
@@ -10,8 +10,8 @@ let content = document.querySelector('.demo-content');
 let navLis = document.querySelectorAll('.demo-nav-content li a');
 let contents = document.querySelectorAll('.demo-content-item');
 let contentItem = document.querySelectorAll('.demo-content-item-ls');
-// let listUrl = '../mock/list.json';
-let listUrl = '/demo/mock/list.json';
+let listUrl = '../assets/mock/list.json';
+
 // 到顶部
 let goTopBtn = document.querySelector('.demo-go-top');
 let showNav = document.querySelector('.demo-nav-m');
