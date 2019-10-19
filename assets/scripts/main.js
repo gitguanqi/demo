@@ -2,7 +2,7 @@
  * @Author: fed_guanqi 
  * @Date: 2019-10-18 19:49:27 
  * @Last Modified by: fed_guanqi
- * @Last Modified time: 2019-10-19 13:25:25
+ * @Last Modified time: 2019-10-19 13:56:48
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
@@ -76,9 +76,7 @@ function lazyLoad() {
 
 window.addEventListener('scroll', function(){
     // 懒加载
-    setTimeout(() => {
-        lazyLoad();
-    }, 500);
+    lazyLoad();
     // 到顶部
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollTop > 280) {
