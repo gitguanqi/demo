@@ -2,7 +2,7 @@
  * @Author: fed_guanqi 
  * @Date: 2019-10-18 19:49:27 
  * @Last Modified by: fed_guanqi
- * @Last Modified time: 2019-10-19 11:09:10
+ * @Last Modified time: 2019-10-19 12:59:33
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
@@ -13,6 +13,9 @@ let contentItem = document.querySelectorAll('.demo-content-item-ls');
 let listUrl = '../assets/mock/list.json';
 // 到顶部
 let goTopBtn = document.querySelector('.demo-go-top');
+let showNav = document.querySelector('.demo-nav-m');
+let demoNav = document.querySelector('.demo-nav');
+let navExit = document.querySelector('.demo-nav-exit');
 
 // 获取数据
 getData();
@@ -121,4 +124,29 @@ function goTop () {
     }
     document.documentElement.scrollTop = document.body.scrollTop = top + speed;
     }, 10);
+}
+
+// 手机版显示左侧导航
+if (navigator.userAgent.indexOf('Mobile') > -1) {
+    if (showNav) {
+        showNav.addEventListener('click', showSilderNav, false);
+        function showSilderNav () {
+            demoNav.style.left = 0;
+        }
+    }
+    if (navExit) {
+        navExit.addEventListener('click', hideSilderNav, false);
+        function hideSilderNav () {
+            demoNav.style.left = -100 + '%';
+        }    
+    }
+}
+
+window.onresize = function () {
+    let clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    if (clientWidth >= 750) {
+        demoNav.style.left = 0;
+    } else {
+        demoNav.style.left = -100 + '%';
+    }
 }
