@@ -833,7 +833,7 @@
             "cid": 5005,
             "name": "【nodejs】xq短网址",
             "description": "【nodejs】xq短网址是一个短链生成工具的案例。",
-            "href": "https://demo.guanqi.xyz/short",
+            "href": "https://short.guanqi.xyz",
             "picUrl": "./assets/images/cover/short.jpg",
             "type": "nodejsapp",
             "tags": "nodejs,短链生成",
