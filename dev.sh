@@ -5,5 +5,5 @@ set -e
 
 # 部署到github
 git add .
-git commit -m 'deploy'
+git commit -m 'dev'
 git push origin master
