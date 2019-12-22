@@ -64,7 +64,7 @@
     font-size: 16px;
 }
 .demo-nav-content li a.active {
-    color: #3F51B5;
+    color: #2da7fd;
 }
 .demo-nav-content li a .fa {
     margin-right: 10px;
@@ -127,7 +127,7 @@
     height: 20px;
     line-height: 20px;
     font-size: 16px;
-    color: #3F51B5;
+    color: #4370d7;
     overflow:hidden;
     white-space: nowrap;
     text-overflow:ellipsis;
@@ -169,7 +169,7 @@
     font-size: 13px;
 }
 .demo-foot a {
-    color: #3F51B5;
+    color: #4370d7;
 }
 .demo-go-top {
     position: fixed;
@@ -184,7 +184,7 @@
     border: 1px solid #ccc;
     text-align: center;
     font-size: 32px;
-    color: #3F51B5;
+    color: #4370d7;
 }
 .demo-go-top:hover {
     cursor: pointer;
@@ -339,7 +339,7 @@
         border: .0625rem solid #ccc;
         text-align: center;
         font-size: 2rem;
-        color: #3F51B5;
+        color: #4370d7;
     }
     .demo-go-top:hover {
         cursor: pointer;
