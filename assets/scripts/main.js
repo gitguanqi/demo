@@ -1,8 +1,8 @@
 /*
- * @Author: fed_guanqi 
+ * @Author: Mr.Mark  
  * @Date: 2019-10-18 19:49:27 
- * @Last Modified by: fed_guanqi
- * @Last Modified time: 2019-10-19 13:56:48
+ * @Last Modified by: Mr.Mark
+ * @Last Modified time: 2020-03-03 19:50:53
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
@@ -10,8 +10,7 @@ let content = document.querySelector('.demo-content');
 let navLis = document.querySelectorAll('.demo-nav-content li a');
 let contents = document.querySelectorAll('.demo-content-item');
 let contentItem = document.querySelectorAll('.demo-content-item-ls');
-// let listUrl = '../assets/mock/list.json';
-let listUrl = '/demo/assets/mock/list.json';
+let host = location.origin + location.pathname;
 
 // 到顶部
 let goTopBtn = document.querySelector('.demo-go-top');
@@ -22,7 +21,7 @@ let navExit = document.querySelector('.demo-nav-exit');
 // 获取数据
 getData();
 async function getData () {
-    let data = await axios.get(listUrl);
+    let data = await axios.get(host + '/assets/mock/list.json');
     document.title = data.data.name + '- 探索前端新技术';
     siteTitle.innerText = data.data.name;
     let list = data.data.data.v1.data.list;
@@ -32,14 +31,14 @@ async function getData () {
 // 显示数据
 function showData (list) {
     let contentItem = document.querySelectorAll('.demo-content-item-ls');
-    let host = location.origin;
+
     list.forEach(element => {
         let cIndex = element.cid.toString().split('')[0] - 1;
         let tags = element.tags.split(',').join(', ');
         if (element.href.indexOf('http') > -1 || element.href.indexOf('https') > -1) {
-            element.href = host + '/demo/link/?url=' + element.href;
+            element.href = host + 'link/?url=' + element.href;
         } else {
-            element.href = host + '/demo/' + element.href;
+            element.href = host + element.href;
         }
         contentItem[cIndex].innerHTML += `<li>
             <a href="${element.href}" target="_blank" title="${element.description}">

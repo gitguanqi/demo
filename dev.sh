@@ -7,4 +7,6 @@ set -e
 git add .
 git commit -m 'dev'
 git push origin master
+git push origin master
+git push coding master
 git push coding master

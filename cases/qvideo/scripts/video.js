@@ -1,14 +1,14 @@
 /*
- * @Author: guanqi 
+ * @Author: Mr.Mark  
  * @Date: 2019-08-03 13:55:30 
- * @Last Modified by: fed.guanqi
+ * @Last Modified by: fed.Mr.Mark 
  * @Last Modified time: 2019-08-03 16:10:41
  */
 /* qvideo视频播放器 */
 /*
- * @Author: guanqi 
+ * @Author: Mr.Mark  
  * @Date: 2019-08-03 12:21:38 
- * @Last Modified by: fed.guanqi
+ * @Last Modified by: fed.Mr.Mark 
  * @Last Modified time: 2019-08-03 13:50:06
  */
 // Qvideo播放器js
