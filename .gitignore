@@ -1,7 +1,5 @@
 .DS_Store
 deploy.sh
-origin.html
-origin.min.html
 
 # Editor directories and files
 .idea
