@@ -1,27 +1,69 @@
-﻿# Front End Demo
+# Front-end laboratory
 
-This is a warehouse dedicated to storing demos.
+> This is the documentation for this project. Some pages about front-end cases are displayed!
 
-## Document Description
+[English document](./README.md)
 
-+ [English document](README.md)
-+ [Chinese documentation](zh-CN.md)
+## table of Contents
 
-## demo分类
++ Security
++ Background
++ Installation
++ Usage
++ API
++ Contribution
++ Agreement
 
-+ project
-+ case
+## Safety
 
-## Project
+This project is built using [W3C](https://w3.org) WEB standard native language, and the theme is designed independently.
 
-**Project** is the website of the scaffolding that was built and built. It has very complete functions.
+No program security issues have been found at this time. If you have any questions, please mention [Suggestions](https://github.com/gitguanqi/demo/issues/new).
 
-## Case
+## Background
 
-**Case** is a web page exercise that is usually written.
+This warehouse records a summary of front-end knowledge cases that I have written and practiced in the past two years, including large projects and streamlined cases.
 
-## About the author
+## Installation
 
-Front end development one ~
+```sh
+npm i live-server -g
+live-server --port = 4001
+```
 
-Interested to follow [@gitguanqi](https://github.com/gitguanqi)
+Open `http://localhost: 4001` to see it.
+
+## Usage
+
+Add project records in `assets / mock / list.json`.
+
+Large projects can be added in the `projects` folder and small cases in the `cases` folder.
+
+`json` format is
+
+```json
+{
+    "id": 1,
+    "cid": 1001,
+    "name": "XXX",
+    "description": "XXX",
+    "href": "projects / XXX /",
+    "picUrl": "./assets/images/cover/XXX.jpg",
+    "type": "project",
+    "tags": "XXX, XXX",
+    "create_time": "2020-03-04",
+    "update_time": "2020-03-04"
+}
+```
+
+## API
+
+This warehouse uses the axios library to request mock data for page rendering.
+
+## Contribution
+
+[@gitguanqi](https://github.com/gitguanqi)
+
+## Agreement
+
+This project follows the [GPL3.0](https://www.gnu.org/licenses/gpl-3.0.html) agreement, Copyright By gitguanqi
