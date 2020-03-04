@@ -27,11 +27,13 @@ This warehouse records a summary of front-end knowledge cases that I have writte
 ## Installation
 
 ```sh
+git clone https://github.com/gitguanqi/demo.git demo
+cd demo
 npm i live-server -g
-live-server --port = 4001
+live-server --port=4001
 ```
 
-Open `http://localhost: 4001` to see it.
+Open `http://localhost:4001` to see it.
 
 ## Usage
 
