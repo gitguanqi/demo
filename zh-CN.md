@@ -43,16 +43,16 @@ live-server --port=4001
 
 ```json
 {
-    "id": 1,
-    "cid": 1001,
-    "name": "XXX",
-    "description": "XXX",
-    "href": "projects/XXX/",
-    "picUrl": "./assets/images/cover/XXX.jpg",
-    "type": "project",
-    "tags": "XXX,XXX",
-    "create_time": "2020-03-04",
-    "update_time": "2020-03-04"
+  "id": 1,
+  "cid": 1001,
+  "name": "XXX",
+  "description": "XXX",
+  "href": "projects / XXX /",
+  "picUrl": "./assets/images/cover/XXX.jpg",
+  "type": "project",
+  "tags": "XXX, XXX",
+  "create_time": "2020-03-04",
+  "update_time": "2020-03-04"
 }
 ```
 

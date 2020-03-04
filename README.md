@@ -2,7 +2,7 @@
 
 > This is the documentation for this project. Some pages about front-end cases are displayed!
 
-[English document](./README.md)
+[Chinese document](./zh-CN.md)
 
 ## table of Contents
 
@@ -43,16 +43,16 @@ Large projects can be added in the `projects` folder and small cases in the `cas
 
 ```json
 {
-    "id": 1,
-    "cid": 1001,
-    "name": "XXX",
-    "description": "XXX",
-    "href": "projects / XXX /",
-    "picUrl": "./assets/images/cover/XXX.jpg",
-    "type": "project",
-    "tags": "XXX, XXX",
-    "create_time": "2020-03-04",
-    "update_time": "2020-03-04"
+  "id": 1,
+  "cid": 1001,
+  "name": "XXX",
+  "description": "XXX",
+  "href": "projects / XXX /",
+  "picUrl": "./assets/images/cover/XXX.jpg",
+  "type": "project",
+  "tags": "XXX, XXX",
+  "create_time": "2020-03-04",
+  "update_time": "2020-03-04"
 }
 ```
 
