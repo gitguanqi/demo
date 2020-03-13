@@ -1,4 +1,4 @@
-# Front-end laboratory
+# FE laboratory
 
 > This is the documentation for this project. Some pages about front-end cases are displayed!
 
