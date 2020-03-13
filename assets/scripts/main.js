@@ -2,7 +2,7 @@
  * @Author: Mr.Mark  
  * @Date: 2019-10-18 19:49:27 
  * @Last Modified by: Mr.Mark
- * @Last Modified time: 2020-03-03 19:50:53
+ * @Last Modified time: 2020-03-13 17:38:08
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
@@ -20,19 +20,31 @@ let navExit = document.querySelector('.demo-nav-exit');
 
 // 获取数据
 getData();
-async function getData () {
-    let data = await axios.get(host + '/assets/mock/list.json');
-    document.title = data.data.name + '- 探索前端新技术';
-    siteTitle.innerText = data.data.name;
-    let list = data.data.data.v1.data.list;
-    showData(list);
+function getData () {
+    let data = axios.get(host + '/assets/mock/list.json');
+    data.then(function(res) {
+        if (res.status === 200) {
+            let data = res;
+            document.title = data.data.name + '- 探索前端新技术';
+            siteTitle.innerText = data.data.name;
+            let list = data.data.data.v1.data.list;
+            showData(list);
+        } else {
+            let list = [];
+            showData(list);
+        }
+    })
+    .catch(function(err) {
+        throw new Error(err);
+    })
 }
 
 // 显示数据
 function showData (list) {
     let contentItem = document.querySelectorAll('.demo-content-item-ls');
 
-    list.forEach(element => {
+    for (let i = 0; i < list.length; i++) {
+        const element = list[i];
         let cIndex = element.cid.toString().split('')[0] - 1;
         let tags = element.tags.split(',').join(', ');
         if (element.href.indexOf('http') > -1 || element.href.indexOf('https') > -1) {
@@ -40,15 +52,9 @@ function showData (list) {
         } else {
             element.href = host + element.href;
         }
-        contentItem[cIndex].innerHTML += `<li>
-            <a href="${element.href}" target="_blank" title="${element.description}">
-                <img class="lazyimg" src="./assets/images/holder.png" data-src="${'./' + element.picUrl}" alt="${element.name}">
-                <span class="project-title">${element.name}</span>
-                <span class="project-des">${element.description}</span>
-                <span class="project-tags"><i class="fa fa-tags"></i> ${tags}</span>
-            </a>
-        </li>`;
-    });
+        let str = '<li><a href="' + element.href + '" target="_blank" title=" ' + element.description + '"><img class="lazyimg" src="./assets/images/holder.png" data-src="' + './' + element.picUrl + '" alt="' + element.name + '"><span class="project-title">' + element.name + '</span><span class="project-des">' + element.description + '</span><span class="project-tags"><i class="fa fa-tags"></i>' + tags + '</span></a></li>';
+        contentItem[cIndex].innerHTML += str;
+    }
     for (let i = 0; i < contentItem.length; i++) {
         const element = contentItem[i];
         counts[i].innerText = element.childNodes.length;
@@ -88,9 +94,9 @@ window.addEventListener('scroll', function(){
         const element = contents[i].offsetTop - 50;
         if (element <= scrollTop) {
           for (let j = 0; j < navLis.length; j++) {
-            navLis[j].classList = '';
+            navLis[j].className = '';
           }
-          navLis[i].classList = 'active';
+          navLis[i].className = 'active';
         }
       }
 }, false);
@@ -101,8 +107,10 @@ function goNavContent () {
     for (let i = 0; i < navLis.length; i++) {
         const element = navLis[i];
         element.addEventListener('click', function(e) {
-            e.preventDefault();
-            let contentTop = contents[i].offsetTop;
+            let contentTop = 0;
+            if (contents[i]) {
+                contentTop = contents[i].offsetTop;
+            }
             document.documentElement.scrollTop = contentTop;
             document.body.scrollTop = contentTop;
         })

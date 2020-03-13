@@ -1,8 +1,8 @@
 /*
  * @Author: Mr.Mark  
  * @Date: 2019-10-18 19:44:09 
- * @Last Modified by: fed_Mr.Mark 
- * @Last Modified time: 2019-10-19 12:59:28
+ * @Last Modified by: Mr.Mark
+ * @Last Modified time: 2020-03-13 17:07:58
  */
 .clearFix {
     zoom: 1;
@@ -261,6 +261,7 @@
         background-color: #f9f9f9;
     }
     .demo-content-item {
+        position: relative;
         box-sizing: border-box;
         margin: 1.25rem auto;
         padding: 1.25rem .625rem;

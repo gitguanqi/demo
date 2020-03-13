@@ -899,6 +899,18 @@
                         "tags": "友情链接,思否主页",
                         "create_time": "2019-10-18",
                         "update_time": "2019-10-18"
+                    },
+                    {
+                        "id": 75,
+                        "cid": 6006,
+                        "name": "博客园",
+                        "description": "博客园是一个技术博客社区。",
+                        "href": "https://www.cnblogs.com/guanqiweb",
+                        "picUrl": "./assets/images/cover/blog.png",
+                        "type": "link",
+                        "tags": "友情链接,思否主页",
+                        "create_time": "2019-10-18",
+                        "update_time": "2019-10-18"
                     }
                 ]
             }
