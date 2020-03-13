@@ -856,7 +856,7 @@
                         "id": 71,
                         "cid": 6002,
                         "name": "知乎",
-                        "description": "知乎是一个知乎个人主页。",
+                        "description": "知乎是一个社区。",
                         "href": "https://www.zhihu.com/people/jcguanqi",
                         "picUrl": "./assets/images/cover/zhihu.jpg",
                         "type": "link",
@@ -868,7 +868,7 @@
                         "id": 72,
                         "cid": 6003,
                         "name": "掘金",
-                        "description": "掘金是一个掘金个人主页。",
+                        "description": "掘金是一个开发者社区。",
                         "href": "https://juejin.im/user/5c4516d4f265da614c4d123b",
                         "picUrl": "./assets/images/cover/juejin.jpg",
                         "type": "link",
@@ -880,7 +880,7 @@
                         "id": 73,
                         "cid": 6004,
                         "name": "CSDN",
-                        "description": "CSDN是一个CSDN个人主页。",
+                        "description": "CSDN是一个老牌技术社区。",
                         "href": "https://blog.csdn.net/fed_guanqi",
                         "picUrl": "./assets/images/cover/csdn.jpg",
                         "type": "link",
@@ -892,7 +892,7 @@
                         "id": 74,
                         "cid": 6005,
                         "name": "思否",
-                        "description": "思否是一个思否个人主页。",
+                        "description": "思否是一个老牌技术社区。",
                         "href": "https://segmentfault.com/u/jcguanqi",
                         "picUrl": "./assets/images/cover/segmentfault.jpg",
                         "type": "link",
@@ -908,9 +908,9 @@
                         "href": "https://www.cnblogs.com/guanqiweb",
                         "picUrl": "./assets/images/cover/blog.png",
                         "type": "link",
-                        "tags": "友情链接,思否主页",
-                        "create_time": "2019-10-18",
-                        "update_time": "2019-10-18"
+                        "tags": "友情链接,博客园主页",
+                        "create_time": "2020-03-13",
+                        "update_time": "2020-03-13"
                     }
                 ]
             }
