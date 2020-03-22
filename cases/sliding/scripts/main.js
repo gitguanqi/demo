@@ -1,14 +1,14 @@
 /*
  * @Author: Mr.Mark  
  * @Date: 2019-05-11 16:10:10 
- * @Last Modified by: Mr.Mark 
- * @Last Modified time: 2019-06-07 09:33:52
+ * @Last Modified by: Mr.Mark
+ * @Last Modified time: 2020-03-22 18:10:36
  */
 
 //成功以后访问的地址
 let succFn = function () {
   setTimeout(function () {
-    let toUrl = 'https://github.com/gitguanqi';
+    let toUrl = '/';
     window.location.href = toUrl;
   }, 1000)
 }

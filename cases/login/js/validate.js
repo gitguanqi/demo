@@ -18,6 +18,10 @@ function checkForm() {
 		tip[1].innerText = '密码不能为空！';
 		return false;
 	} else {
-		return true;
+		alert('登录成功!');
+		setTimeout(() => {
+			location.href = '/';
+		}, 1000);
+		return false;
 	}
 }
