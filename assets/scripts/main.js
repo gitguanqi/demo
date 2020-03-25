@@ -2,11 +2,12 @@
  * @Author: Mr.Mark  
  * @Date: 2019-10-18 19:49:27 
  * @Last Modified by: Mr.Mark
- * @Last Modified time: 2020-03-13 17:38:08
+ * @Last Modified time: 2020-03-25 11:25:51
  */
 let siteTitle = document.querySelector('.site-title');
 let counts = document.querySelectorAll('.count');
 let content = document.querySelector('.demo-content');
+let count = document.querySelector('#count');
 let navLis = document.querySelectorAll('.demo-nav-content li a');
 let contents = document.querySelectorAll('.demo-content-item');
 let contentItem = document.querySelectorAll('.demo-content-item-ls');
@@ -59,6 +60,7 @@ function showData (list) {
         const element = contentItem[i];
         counts[i].innerText = element.childNodes.length;
     }
+    count.innerText = list.length;
     lazyLoad();
 }
 

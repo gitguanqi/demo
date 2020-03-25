@@ -2,7 +2,7 @@
  * @Author: Mr.Mark  
  * @Date: 2019-10-18 19:44:09 
  * @Last Modified by: Mr.Mark
- * @Last Modified time: 2020-03-13 17:07:58
+ * @Last Modified time: 2020-03-25 11:29:58
  */
 .clearFix {
     zoom: 1;
@@ -77,6 +77,11 @@
     width: 82%;
     background-color: #f9f9f9;
     transition: all .3s;
+}
+#count {
+    margin: 0 5px;
+    color: #2da7fd;
+    font-size: 18px;
 }
 .demo-content-item {
     box-sizing: border-box;
