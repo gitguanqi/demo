@@ -2,7 +2,7 @@
  * @Author: Mr.Mark  
  * @Date: 2019-10-18 19:44:09 
  * @Last Modified by: Mr.Mark
- * @Last Modified time: 2020-03-25 11:29:58
+ * @Last Modified time: 2020-03-25 11:54:34
  */
 .clearFix {
     zoom: 1;
@@ -167,13 +167,18 @@
 }
 .demo-content .demo-foot {
     padding-left: 15px;
-    height: 50px;
-    line-height: 50px;
+    height: 100px;
     background-color: #fff;
     border-radius: 6px;
     font-size: 13px;
 }
+.demo-foot p {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+}
 .demo-foot a {
+    margin: 0 5px;
     color: #4370d7;
 }
 .demo-go-top {
