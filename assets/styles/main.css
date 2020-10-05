@@ -111,6 +111,12 @@
     height: 330px;
     border: 1px solid #ccc;
     border-radius: 6px;
+    overflow: hidden;
+}
+.demo-content-item-ls li:hover {
+    border: 1px solid #2da7fd;
+    box-shadow: 0 0 10px #2da7fd;
+    transform: translateY(-5px);
 }
 .demo-content-item-ls li a {
     display: block;
@@ -161,6 +167,26 @@
 }
 .demo-content-item-ls li a .project-tags .fa {
     margin-right: 5px;
+}
+.demo-content-item-ls-two li {
+    height: 150px;
+    overflow: hidden;
+}
+.demo-content-item-ls-two li a {
+    display: flex;
+}
+.demo-content-item-ls-two li a div {
+    flex: 1;
+    max-width: 200px;
+}
+.demo-content-item-ls-two li a img {
+    margin: auto 5px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.demo-content-item-ls-two li a .project-title,
+.demo-content-item-ls-two li a .project-des {
+    max-width: 200px;
 }
 .demo-nav-m {
     display: none;
@@ -299,6 +325,16 @@
         border: .0625rem solid #ccc;
         border-radius: .375rem;
     }
+    .demo-content-item-ls-two li {
+        height: 9.375rem;
+    }
+    .demo-content-item-ls-two li a img {
+        margin: auto 0;
+        width: 30%;
+    }
+    .demo-content-item-ls-two li a div {
+        flex: 1;
+    }
     .demo-nav-m {
         position: fixed;
         top: 0;
@@ -370,4 +406,10 @@
         height: 100%;
         line-height: 100%;
     }
+}
+
+.text-flow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

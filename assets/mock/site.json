@@ -1,0 +1,139 @@
+{
+    "version": "v0.0.1",
+    "name": "前端实验室",
+    "en": "FED-Lib",
+    "description": "前端实验室是我自己搭建的一个专门用于练习的静态站点。",
+    "author": "gitguanqi",
+    "create_time": "2019-10-18",
+    "update_time": "2019-10-18",
+    "data": {
+        "v1": {
+            "code": 200,
+            "msg": "get_succ",
+            "data": {
+                "navs": [
+                    {
+                        "id": 1,
+                        "title": "生活好站",
+                        "des": "life",
+                        "icon": "cube"
+                    },
+                    {
+                        "id": 2,
+                        "title": "日常工具",
+                        "des": "tool",
+                        "icon": "code"
+                    },
+                    {
+                        "id": 3,
+                        "title": "学习教程",
+                        "des": "learn",
+                        "icon": "terminal"
+                    },
+                    {
+                        "id": 4,
+                        "title": "UI设计",
+                        "des": "ui",
+                        "icon": "window-restore"
+                    },
+                    {
+                        "id": 5,
+                        "title": "WEB开发",
+                        "des": "webdev",
+                        "icon": "folder"
+                    },
+                    {
+                        "id": 6,
+                        "title": "APP开发",
+                        "des": "appdev",
+                        "icon": "tags"
+                    },
+                    {
+                        "id": 7,
+                        "title": "云原生",
+                        "des": "cloud",
+                        "icon": "folder"
+                    },
+                    {
+                        "id": 7,
+                        "title": "企业站点",
+                        "des": "company",
+                        "icon": "cube"
+                    }
+                ],
+                "list": [
+                    {
+                        "cid": 1,
+                        "name": "联合国",
+                        "des": "联合国，健康地球上的和平、尊严与平等！",
+                        "href": "https://www.un.org/zh/",
+                        "cover": "./assets/images/cover/un.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "中国政府",
+                        "des": "中国政府网由国务院办公厅主办，中国政府网运行中心负责运行维护,是国务院和国务院各部门，以及各省、自治区、直辖市人民政府在国际互联网上发布政府信息和提供在线服务的综合平台,第一时间权威发布国务院重大决策部署和重要政策文件，国务院领导同志重要会议、考察、出访活动等政务信息，面向社会提供与政府业务相关的服务，建设基于互联网的政府与公众互动交流新渠道。",
+                        "href": "http://www.gov.cn/",
+                        "cover": "./assets/images/cover/zh.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "工信部备案",
+                        "des": "ICP/IP地址/域名信息备案管理系统。",
+                        "href": "http://beian.miit.gov.cn/",
+                        "cover": "./assets/images/cover/icp.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "公安部备案",
+                        "des": "全国互联网安全管理服务平台。",
+                        "href": "http://www.beian.gov.cn/portal/index.do",
+                        "cover": "./assets/images/cover/beian.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "国家企信系统",
+                        "des": "国家企业信用信息公示系统。",
+                        "href": "http://www.gsxt.gov.cn/index.html",
+                        "cover": "./assets/images/cover/zh.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "中国疾病预防控制中心",
+                        "des": "中国疾病预防控制中心",
+                        "href": "http://www.chinacdc.cn/",
+                        "cover": "./assets/images/cover/cdc.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "国家政务服务平台",
+                        "des": "国家政务服务平台。",
+                        "href": "http://gjzwfw.www.gov.cn/",
+                        "cover": "./assets/images/cover/zh.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "中国判决文书网",
+                        "des": "中国判决文书网。",
+                        "href": "https://wenshu.court.gov.cn/",
+                        "cover": "./assets/images/cover/cgo.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "国家知识产权局商标局",
+                        "des": "国家知识产权局商标局,中国商标网",
+                        "href": "http://sbj.cnipa.gov.cn/",
+                        "cover": "./assets/images/cover/cip.jpg"
+                    },
+                    {
+                        "cid": 1,
+                        "name": "百科名医网",
+                        "des": "百科名医网，拥有海量的精准医学内容，为大众提供了可靠、科学、实用的健康科普知识，让大众面对网络医疗健康信息不再迷茫。",
+                        "href": "https://www.baikemy.com/",
+                        "cover": "./assets/images/cover/bkmyw.jpg"
+                    }
+                ]
+            }
+        }
+    }
+}

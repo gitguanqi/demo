@@ -800,7 +800,7 @@
                         "href": "https://www.zhihu.com/people/jcguanqi",
                         "picUrl": "./assets/images/cover/zhihu.jpg",
                         "type": "link",
-                        "tags": "友情链接,知乎主页",
+                        "tags": "友情链接,知乎",
                         "create_time": "2019-10-18",
                         "update_time": "2019-10-18"
                     },
@@ -811,7 +811,7 @@
                         "href": "https://juejin.im/user/5c4516d4f265da614c4d123b",
                         "picUrl": "./assets/images/cover/juejin.jpg",
                         "type": "link",
-                        "tags": "友情链接,掘金主页",
+                        "tags": "友情链接,掘金",
                         "create_time": "2019-10-18",
                         "update_time": "2019-10-18"
                     },
@@ -822,7 +822,7 @@
                         "href": "https://blog.csdn.net/fed_guanqi",
                         "picUrl": "./assets/images/cover/csdn.jpg",
                         "type": "link",
-                        "tags": "友情链接,csdn主页",
+                        "tags": "友情链接,csdn",
                         "create_time": "2019-10-18",
                         "update_time": "2019-10-18"
                     },
@@ -833,7 +833,7 @@
                         "href": "https://segmentfault.com/u/jcguanqi",
                         "picUrl": "./assets/images/cover/segmentfault.jpg",
                         "type": "link",
-                        "tags": "友情链接,思否主页",
+                        "tags": "友情链接,思否",
                         "create_time": "2019-10-18",
                         "update_time": "2019-10-18"
                     },
@@ -844,7 +844,7 @@
                         "href": "https://www.cnblogs.com/guanqiweb",
                         "picUrl": "./assets/images/cover/blog.png",
                         "type": "link",
-                        "tags": "友情链接,博客园主页",
+                        "tags": "友情链接,博客园",
                         "create_time": "2020-03-13",
                         "update_time": "2020-03-13"
                     }
