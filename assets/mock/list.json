@@ -717,17 +717,6 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 5003,
-                        "name": "【nodejs】好物图库",
-                        "description": "【nodejs】xq相册是一个nodejs爬虫图片的项目。",
-                        "href": "https://guanqi.xyz/pics/",
-                        "picUrl": "./assets/images/cover/pics.jpg",
-                        "type": "nodejsapp",
-                        "tags": "nodejs,爬虫",
-                        "create_time": "2019-10-18",
-                        "update_time": "2019-10-18"
-                    },
-                    {
                         "cid": 5004,
                         "name": "【nodejs】FEDove",
                         "description": "【nodejs】FEDove是一个nodejs+websocket的网页聊天室的项目。",
@@ -768,17 +757,6 @@
                         "picUrl": "./assets/images/cover/short.jpg",
                         "type": "nodejsapp",
                         "tags": "nodejs,短链生成",
-                        "create_time": "2019-10-18",
-                        "update_time": "2019-10-18"
-                    },
-                    {
-                        "cid": 5008,
-                        "name": "【nodejs】奇云后台系统",
-                        "description": "【nodejs】奇云后台是一个vue的管理系统!",
-                        "href": "https://admin.guanqi.xyz",
-                        "picUrl": "./assets/images/cover/admin.jpg",
-                        "type": "nodejsapp",
-                        "tags": "nodejs,后台系统",
                         "create_time": "2019-10-18",
                         "update_time": "2019-10-18"
                     },
