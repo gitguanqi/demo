@@ -10,7 +10,8 @@ let count = document.querySelector('#count');
 let navLis = document.querySelectorAll('.demo-nav-content li a');
 let contents = document.querySelectorAll('.demo-content-item');
 let contentItem = document.querySelectorAll('.demo-content-item-ls');
-let host = location.origin;
+let pathName = location.pathname.split('/');
+let host = location.origin + '/' + pathName[1];
 
 // 到顶部
 let goTopBtn = document.querySelector('.demo-go-top');
