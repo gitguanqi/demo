@@ -57,6 +57,39 @@
                         "update_time": "2019-10-18"
                     },
                     {
+                        "cid": 1008,
+                        "name": "【vuejs】小奇工具箱",
+                        "description": "【vuejs】小奇工具箱是一个vuejs的常用工具项目。",
+                        "href": "https://tool.guanqi.xyz/",
+                        "picUrl": "./assets/images/cover/tool.png",
+                        "type": "project",
+                        "tags": "vuejs,tool",
+                        "create_time": "2019-10-18",
+                        "update_time": "2019-10-18"
+                    },
+                    {
+                        "cid": 1009,
+                        "name": "【vuejs】小奇后台",
+                        "description": "【vuejs】小奇后台是一个基于vuejs+elementui搭建的工具箱后台管理系统项目。",
+                        "href": "https://tms.guanqi.xyz/",
+                        "picUrl": "./assets/images/cover/admin.jpg",
+                        "type": "project",
+                        "tags": "vuejs,admin",
+                        "create_time": "2019-10-18",
+                        "update_time": "2019-10-18"
+                    },
+                    {
+                        "cid": 1010,
+                        "name": "【nodejs】KDAPI",
+                        "description": "【nodejs】KDAPI是一个nodejs+mysql+redis搭建的api接口服务器项目。",
+                        "href": "https://api.guanqi.xyz/",
+                        "picUrl": "./assets/images/cover/node.jpg",
+                        "type": "project",
+                        "tags": "nodejs,api",
+                        "create_time": "2019-10-18",
+                        "update_time": "2019-10-18"
+                    },
+                    {
                         "cid": 2001,
                         "name": "canvas图表",
                         "description": "canvas图表是一个关于html5中canvas画布标签的练习，是一个扇形图的图表页面案例。",
@@ -717,51 +750,7 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 5004,
-                        "name": "【nodejs】FEDove",
-                        "description": "【nodejs】FEDove是一个nodejs+websocket的网页聊天室的项目。",
-                        "href": "https://chat.guanqi.xyz/",
-                        "picUrl": "./assets/images/cover/chat.jpg",
-                        "type": "nodejsapp",
-                        "tags": "nodejs,websocket,聊天室",
-                        "create_time": "2019-10-18",
-                        "update_time": "2019-10-18"
-                    },
-                    {
-                        "cid": 5005,
-                        "name": "【vuejs】万有文件",
-                        "description": "【vuejs】万有文件是一个vuejs的云盘文件存储的项目。",
-                        "href": "https://guanqi.xyz/file/",
-                        "picUrl": "./assets/images/cover/static.jpg",
-                        "type": "nodejsapp",
-                        "tags": "vuejs,文件存储",
-                        "create_time": "2019-10-18",
-                        "update_time": "2019-10-18"
-                    },
-                    {
-                        "cid": 5006,
-                        "name": "【vuejs】逍遥密码宝",
-                        "description": "【vuejs】逍遥密码宝是一个vuejs+typescript的密码管理的项目。",
-                        "href": "https://guanqi.xyz/passwd/",
-                        "picUrl": "./assets/images/cover/passwd.jpg",
-                        "type": "nodejsapp",
-                        "tags": "vuejs,密码管理",
-                        "create_time": "2019-10-18",
-                        "update_time": "2019-10-18"
-                    },
-                    {
-                        "cid": 5007,
-                        "name": "【nodejs】蝌蚪短链",
-                        "description": "【nodejs】蝌蚪短链是一个短链生成工具的案例。",
-                        "href": "https://guanqi.xyz/a/",
-                        "picUrl": "./assets/images/cover/short.jpg",
-                        "type": "nodejsapp",
-                        "tags": "nodejs,短链生成",
-                        "create_time": "2019-10-18",
-                        "update_time": "2019-10-18"
-                    },
-                    {
-                        "cid": 6001,
+                        "cid": 5001,
                         "name": "我的博客",
                         "description": "我的博客是一个个人技术博客的站点。",
                         "href": "https://guanqi.xyz/",
@@ -772,7 +761,7 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 6002,
+                        "cid": 5002,
                         "name": "知乎",
                         "description": "知乎是一个社区。",
                         "href": "https://www.zhihu.com/people/jcguanqi",
@@ -783,7 +772,7 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 6003,
+                        "cid": 5003,
                         "name": "掘金",
                         "description": "掘金是一个开发者社区。",
                         "href": "https://juejin.cn/user/5c4516d4f265da614c4d123b",
@@ -794,7 +783,7 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 6004,
+                        "cid": 5004,
                         "name": "CSDN",
                         "description": "CSDN是一个老牌技术社区。",
                         "href": "https://blog.csdn.net/fed_guanqi",
@@ -805,7 +794,7 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 6005,
+                        "cid": 5005,
                         "name": "思否",
                         "description": "思否是一个老牌技术社区。",
                         "href": "https://segmentfault.com/u/jcguanqi",
@@ -816,7 +805,7 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 6006,
+                        "cid": 5006,
                         "name": "博客园",
                         "description": "博客园是一个技术博客社区。",
                         "href": "https://www.cnblogs.com/guanqiweb",
