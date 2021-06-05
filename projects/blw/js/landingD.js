@@ -1,1 +1,52 @@
-function getCookie(e){for(var t=document.cookie,n=t.split(";"),o=0;o<n.length;o++)if(n[o].split("=")[0].trim()===e)return n[o].split("=")[1]}function removeCookie(e){setCookie(e,null,-1)}function setCookie(e,t,n){var o=new Date;o.setDate(o.getDate()+n),document.cookie=e+"="+encodeURIComponent(t)+";expires="+o}function setCookie(e,t,n){var o=new Date;o.setDate(o.getDate()+n),document.cookie=e+"="+encodeURIComponent(t)+";expires="+o}var btn=document.getElementsByClassName("logi")[0];btn.onclick=function(e){e=e||window.event,e.preventDefault(),username.value&&(setCookie("username",username.value,7),location.href="index.html")};var reg=/^[1][3,5,8,7][0-9]{9,9}$/g;username.onchange=function(){var e=this.value;msg.innerText=reg.test(e)?"格式正确":"请输入正确的账号"};
+
+ //获取cookie
+ function getCookie(key){
+    var _cookie = document.cookie;	//username=wally; age=17; sex=man
+    var arr = _cookie.split(";");
+    for(var i=0;i<arr.length;i++){
+        if(arr[i].split("=")[0].trim() === key){
+            return arr[i].split("=")[1]
+        }
+    }
+}
+ function removeCookie(key){
+         setCookie(key,null,-1)
+  }
+function setCookie(key, value, time){
+            var date = new Date()
+            date.setDate(date.getDate() + time) // 当前时间 + 30天
+            document.cookie = key + "=" + encodeURIComponent(value) + ";expires=" + date
+        }
+
+
+
+
+var btn=document.getElementsByClassName("logi")[0];
+
+                function setCookie(key, value, time){
+                var date = new Date()
+                date.setDate(date.getDate() + time) 
+                document.cookie = key + "=" + encodeURIComponent(value) + ";expires=" + date
+        }
+                btn.onclick=function(e){
+        e=e||window.event;
+        e.preventDefault();
+        if(username.value){
+                setCookie("username", username.value, 7)
+                location.href="index.html";
+                }	
+   
+}                                                                                         /* 存cookie*/
+
+
+
+var reg = /^[1][3,5,8,7][0-9]{9,9}$/g
+                
+                username.onchange = function(){
+                        var _val = this.value;
+                        if(reg.test(_val)){
+                                msg.innerText = "格式正确"
+                        }else{
+                                msg.innerText = "请输入正确的账号"
+                        }
+                }

@@ -1,1 +1,26 @@
-function fontSi(){document.documentElement.style.fontSize=document.documentElement.clientWidth/8+"px"}window.onload=fontSi;var a1=document.querySelectorAll("ul li a");console.log(a1);for(var i=0;i<a1.length;i++)a1[i].index=i,a1[i].onclick=function(){for(var e=(this.index,0);e<a1.length;e++)a1[e].className="";this.className="active"};
+window.onload = fontSi;
+function fontSi(){
+	document.documentElement.style.fontSize = 
+	document.documentElement.clientWidth / 8 + 'px'
+}
+/*移入变色事件*/
+var a1=document.querySelectorAll("ul li a");
+
+console.log(a1)
+/*a1.onclick=function(e){
+	e=e || window.event;
+	e.preventDefault();
+	a1.style.color="#f00" ;
+}*/
+			
+for(var i=0;i<a1.length;i++){
+				a1[i].index=i
+				a1[i].onclick=function(){
+					var _index=this.index
+					for(var j=0;j<a1.length;j++){
+						a1[j].className=""
+					}
+					this.className="active"
+				}
+			}
+			

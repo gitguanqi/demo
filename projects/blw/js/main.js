@@ -1,1 +1,58 @@
-var more=document.querySelector(".more"),back=document.querySelector(".back"),totop=document.querySelector(".totop"),navlist=document.querySelector(".navlist");more.onclick=function(o){o=o||window.event,o.preventDefault(),navlist.style.display="block",more.style.display="none"},back.onclick=function(o){o=o||window.event,o.preventDefault(),navlist.style.display="none",more.style.display="block"},window.onscroll=function(){var o=document.documentElement.scrollTop||document.body.scrollTop;o+=10,o>100&&(totop.style.display="block"),100>o&&(totop.style.display="none")},totop.onclick=function(o){o=o||window.event,o.preventDefault();var e=setInterval(function(){var o=document.documentElement.scrollTop||document.body.scrollTop;return o-=30,document.documentElement.scrollTop?document.documentElement.scrollTop=o:document.body.scrollTop=o,0>o?void clearInterval(e):void 0},2)};
+window.onload = fontSi;
+function fontSi(){
+	document.documentElement.style.fontSize = 
+	document.documentElement.clientWidth / 8 + 'px'
+}
+var more = document.querySelector('.more'),
+    back = document.querySelector('.back'),
+    totop = document.querySelector('.totop'),
+    navlist = document.querySelector('.navlist');
+if (more) {
+	more.onclick = function(e){
+		e=e || window.event;
+		e.preventDefault();
+		navlist.style.display = "block"
+		more.style.display = "none"
+	}
+}
+
+if (back) {
+	back.onclick = function(e){
+		e=e || window.event;
+		e.preventDefault();
+		navlist.style.display = "none"
+		more.style.display = "block"
+	}
+}
+
+window.onscroll = function(){
+	var scrTop = document.documentElement.scrollTop || document.body.scrollTop;
+	scrTop += 10;
+	if (scrTop > 100) {
+		totop.style.display = "block";
+	}
+	if (scrTop < 100) {
+		totop.style.display = "none";
+	}
+	
+}
+
+if (totop) {
+	totop.onclick = function(e){
+		e=e || window.event;
+		e.preventDefault();
+		var timer = setInterval(function(){
+			var scrTops = document.documentElement.scrollTop || document.body.scrollTop;
+			scrTops -= 30
+			if (document.documentElement.scrollTop) {
+				document.documentElement.scrollTop = scrTops
+			} else{
+				document.body.scrollTop = scrTops
+			}
+			if (scrTops < 0){
+				clearInterval(timer);
+				return
+			}
+		},2)
+	}
+}

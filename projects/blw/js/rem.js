@@ -1,1 +1,5 @@
-function fontSi(){document.documentElement.style.fontSize=document.documentElement.clientWidth/10+"px"}window.onload=fontSi;
+window.onload = fontSi;
+function fontSi(){
+	document.documentElement.style.fontSize = 
+	document.documentElement.clientWidth / 10 + 'px'
+}
