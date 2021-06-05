@@ -14,6 +14,6 @@ git commit -m "${commits}"
 
 # 更新到远程仓库
 git push origin master
-git push gogs master
+git push github master
 
 exit 0
