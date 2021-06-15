@@ -806,17 +806,6 @@
                     },
                     {
                         "cid": 4034,
-                        "name": "地图规划线路",
-                        "description": "地图规划线路是一个腾讯地图线路地图的效果。",
-                        "href": "cases/mapline/",
-                        "picUrl": "./assets/images/holder.png",
-                        "type": "js",
-                        "tags": "js,map",
-                        "create_time": "2021-06-15",
-                        "update_time": "2021-06-15"
-                    },
-                    {
-                        "cid": 4035,
                         "name": "漂浮窗口广告牌",
                         "description": "漂浮窗口广告牌是一个js漂浮的广告位案例。",
                         "href": "cases/slidead/",
