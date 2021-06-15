@@ -13,7 +13,7 @@ read -p "Please input this version commits: " -t 30 commits
 git commit -m "${commits}"
 
 # 更新到远程仓库
-git push origin master
-git push github master
+git push origin master -f
+git push github master -f
 
 exit 0
