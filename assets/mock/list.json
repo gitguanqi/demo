@@ -58,6 +58,17 @@
                     },
                     {
                         "cid": 1008,
+                        "name": "【vuejs】好物图库",
+                        "description": "好物图库是一个关于简单单页的vue开发的一个各种分类的图片游览库。",
+                        "href": "https://guanqi.xyz/pics/",
+                        "picUrl": "./assets/images/cover/pic.jpg",
+                        "type": "project",
+                        "tags": "App,apicloud,博客写作",
+                        "create_time": "2019-10-18",
+                        "update_time": "2019-10-18"
+                    },
+                    {
+                        "cid": 1009,
                         "name": "【vuejs】小奇工具箱",
                         "description": "【vuejs】小奇工具箱是一个vuejs的常用工具项目。",
                         "href": "https://tool.guanqi.xyz/",
@@ -68,7 +79,7 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 1009,
+                        "cid": 1010,
                         "name": "【vuejs】小奇后台",
                         "description": "【vuejs】小奇后台是一个基于vuejs+elementui搭建的工具箱后台管理系统项目。",
                         "href": "https://tms.guanqi.xyz/",
@@ -79,7 +90,7 @@
                         "update_time": "2019-10-18"
                     },
                     {
-                        "cid": 1010,
+                        "cid": 1011,
                         "name": "【nodejs】KDAPI",
                         "description": "【nodejs】KDAPI是一个nodejs+mysql+redis搭建的api接口服务器项目。",
                         "href": "https://api.guanqi.xyz/",
