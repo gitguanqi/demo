@@ -63,7 +63,7 @@
                         "href": "https://guanqi.xyz/pics/",
                         "picUrl": "./assets/images/cover/pic.jpg",
                         "type": "project",
-                        "tags": "App,apicloud,博客写作",
+                        "tags": "vuejs,相册,图库",
                         "create_time": "2019-10-18",
                         "update_time": "2019-10-18"
                     },
