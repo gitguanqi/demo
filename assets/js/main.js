@@ -5,13 +5,13 @@
  * @Last Modified time: 2020-03-25 11:25:51
  */
 let siteTitle = document.querySelector('.site-title');
+let counts = document.querySelectorAll('.count');
 let content = document.querySelector('.demo-content');
 let count = document.querySelector('#count');
 let navLis = document.querySelectorAll('.demo-nav-content li a');
 let contents = document.querySelectorAll('.demo-content-item');
 let contentItem = document.querySelectorAll('.demo-content-item-ls');
-let pathName = location.pathname.split('/');
-let host = location.origin + '/' + pathName[1];
+let host = location.origin + location.pathname;
 
 // 到顶部
 let goTopBtn = document.querySelector('.demo-go-top');
@@ -21,17 +21,14 @@ let navExit = document.querySelector('.demo-nav-exit');
 
 // 获取数据
 getData();
-
 function getData () {
-    let data = axios.get(host + '/assets/mock/site.json');
+    let data = axios.get(host + '/assets/mock/list.json');
     data.then(function(res) {
         if (res.status === 200) {
             let data = res;
-            document.title = '网址导航 - ' + data.data.name;
+            document.title = data.data.name + '- 探索前端新技术';
             siteTitle.innerText = data.data.name;
             let list = data.data.data.v1.data.list;
-            let navs = data.data.data.v1.data.navs;
-            showNavs(navs);
             showData(list);
         } else {
             let list = [];
@@ -44,33 +41,19 @@ function getData () {
 }
 
 // 显示数据
-function showNavs (list) {  
-    let contentNavs = document.querySelector('.demo-nav-content');
-    let contentBox = document.querySelector('.demo-content-box');
-    let str = '';
-    let strLi = '';
-    for (let i = 0; i < list.length; i++) {
-        const element = list[i];
-        str += '<li><a href="#' + element.des + '"><i class="fa fa-'+ element.icon + '"></i> <span>' + element.title + '</span></a></li>';    
-        strLi += '<div class="demo-content-item"><h3 class="demo-content-item-title" id="' + element.des + '">' + element.title + '(<span class="count">0</span>)</h3><ul class="demo-content-item-ls demo-content-item-ls-two clearFix"></ul></div>'
-    }
-    contentNavs.innerHTML += str;
-    contentBox.innerHTML += strLi;
-}
-
 function showData (list) {
     let contentItem = document.querySelectorAll('.demo-content-item-ls');
-    let counts = document.querySelectorAll('.count');
 
     for (let i = 0; i < list.length; i++) {
         const element = list[i];
-        let cIndex = element.cid-1;
+        let cIndex = element.cid.toString().split('')[0] - 1;
+        let tags = element.tags.split(',').join(', ');
         if (element.href.indexOf('http') > -1 || element.href.indexOf('https') > -1) {
-            element.href = host + '/link/?url=' + element.href;
+            element.href = host + 'link/?url=' + element.href;
         } else {
             element.href = host + element.href;
         }
-        let str = '<li><a href="' + element.href + '" target="_blank" title=" ' + element.des + '"><img class="lazyimg" src="../assets/images/holder.png" data-src="' + '../' + element.cover + '" alt="' + element.name + '"><div><span class="project-title">' + element.name + '</span><span class="project-des">' + element.des + '</span></div></a></li>';
+        let str = '<li><a href="' + element.href + '" target="_blank" title=" ' + element.description + '"><img class="lazyimg" src="./assets/img/holder.png" data-src="' + './' + element.picUrl + '" alt="' + element.name + '"><span class="project-title">' + element.name + '</span><span class="project-des">' + element.description + '</span><span class="project-tags"><i class="fa fa-tags"></i>' + tags + '</span></a></li>';
         contentItem[cIndex].innerHTML += str;
     }
     for (let i = 0; i < contentItem.length; i++) {
@@ -90,7 +73,7 @@ function lazyLoad() {
     for (var i = n; i < lazyImgs.length; i++) {
       if (lazyImgs[i].offsetTop < (clientHeight + scrollTop)) {
         let secImgs = lazyImgs[i];
-        if (secImgs.getAttribute('src') === '../assets/images/holder.png') {
+        if (secImgs.getAttribute('src') === './assets/img/holder.png') {
             secImgs.src = secImgs.getAttribute('data-src');
         }
       }

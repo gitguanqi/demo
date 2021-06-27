@@ -617,6 +617,43 @@
     return ajax;
   }
 
+  Gjs.httpSimple = function (type, url, data, cb) {
+    //new ajax
+    var data = data || null;
+    var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    let result;
+    //open request
+    xhr.open(type, url, true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          //success
+          result = {
+            code: this.status,
+            msg: 'get_succ',
+            data: {
+              info: '获取成功!',
+              data: JSON.parse(this.response),
+            }
+          }
+          cb(result);
+        } else {
+          // failed
+          result = {
+            code: this.status,
+            msg: 'get_fail',
+            data: {
+              info: '获取失败!',
+            }
+          }
+          cb(result);
+        }
+      }
+    }
+    xhr.send(data);
+  }
+
   // cross origin methods
   Gjs.jsonp = function (url, callback) {
     let script = document.createElement('script');
@@ -965,6 +1002,42 @@
     this.contents.addEventListener('mouseout', function () {
       that.autoPlay();
     }, true);
+  }
+
+  Gjs.prototype.getIeVersion = function () {
+    var ie = navigator.userAgent.indexOf('Trident') == -1 ? false : true;
+    var version = navigator.appVersion;
+    var versionName = '';
+    if (ie && version) {
+        if (version.indexOf('rv:11.0') != -1) {
+            return versionName = 'ie11'
+        } else if (version.indexOf('MSIE 10.0') != -1) {
+            return versionName = 'ie10'
+        } else if (version.indexOf('MSIE 9.0') != -1) {
+            return versionName = 'ie9'
+        } else if (version.indexOf('MSIE 8.0') != -1) {
+            return versionName = 'ie8'
+        } else if (version.indexOf('MSIE 7.0') != -1) {
+            return versionName = 'ie7'
+        }
+    }
+    return -1;
+  }
+
+  Gjs.prototype.checkBrowserName = function () {
+    var browserName = '';
+    if (navigator.userAgent.indexOf('Chrome') != -1) {
+      browserName = 'Chrome';
+    } else if (navigator.userAgent.indexOf('Trident') != -1 || navigator.appVersion.indexOf('MSIE') != -1) {
+      browserName = 'IE';
+    } else if (navigator.userAgent.indexOf('Firefox') != -1) {
+      browserName = 'Firefox';
+    } else if (navigator.userAgent.indexOf('Opera') != -1) {
+      browserName = 'Opera';
+    } else if (navigator.userAgent.indexOf('Safari') != -1) {
+      browserName = 'Safari';
+    }
+    return browserName;
   }
 
   // register to gjs extend object
